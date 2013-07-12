@@ -1,0 +1,6 @@
+;
+db_driver = sqlite
+db_host = var/resources.sqlite 
+; db_user = cm
+; db_pass = cm
+; db_name = resources
