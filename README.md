@@ -1,6 +1,8 @@
 Browse resources bookings
 =========
 
+@license http://olav.mit-license.org/
+
 This application reads an Excel sheet with resource bookings and creates a browsable web page from it.
 It is structured as a simple view/controller framework. 
 
