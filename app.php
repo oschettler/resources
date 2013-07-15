@@ -70,8 +70,8 @@ function _save($user, $day, $slots) {
     echo "Done.\n";
   }
 
-  $exists = isset($userdays[$user['name']]);
-  
+  $exists = isset($userdays[$user['name']][$day['date']]);
+
   if ($exists) {
     
     $sql = "update days 
@@ -175,6 +175,11 @@ function update() {
   
   $days = array();
   for ($i = 1; $i < count($title[1][0]); $i++) {
+    // stop at first empty column
+    if (trim($title[3][0][$i]) == '') {
+      break;
+    }
+
     $dateobj = PHPExcel_Shared_Date::ExcelToPHPObject($title[3][0][$i]);
     
     $days[$i] = array(
