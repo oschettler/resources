@@ -89,7 +89,7 @@
         <?php echo $contents; ?>
       </div>
       <footer>
-        <p>Fragen? <a href="mailto:olav.schettler@cocomore.com">Olav Schettler</a> - <a href="http://cm.schettler.net/fossil">Code</a></p>
+        <p>Fragen? <a href="mailto:olav.schettler@cocomore.com">Olav Schettler</a> - <a href="https://github.com/oschettler/resources">Code</a></p>
       </footer>
     </div>
   </body>
